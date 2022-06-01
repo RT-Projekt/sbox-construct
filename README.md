@@ -1,1 +1,1 @@
-# sbox-construct
+# Сonstruct `S&box`
