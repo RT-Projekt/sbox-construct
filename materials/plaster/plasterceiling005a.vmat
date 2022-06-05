@@ -43,6 +43,6 @@ Layer0
 
 	SystemAttributes
 	{
-		PhysicsSurfaceProperties "hl2.concrete"
+		PhysicsSurfaceProperties "concrete"
 	}
 }

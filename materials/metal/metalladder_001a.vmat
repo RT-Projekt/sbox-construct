@@ -37,7 +37,7 @@ Layer0
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "textures/metal/metalladder_001a_rough.tga"
+	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
@@ -53,6 +53,6 @@ Layer0
 
 	SystemAttributes
 	{
-		PhysicsSurfaceProperties "hl2.metal"
+		PhysicsSurfaceProperties "metal"
 	}
 }
