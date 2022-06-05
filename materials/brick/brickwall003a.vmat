@@ -21,12 +21,12 @@ Layer0
 	TextureColor "textures/brick/brickwall003a_color.tga"
 
 	//---- Detail Texture ----
-	g_flDetailBlendFactor "0.500"
+	g_flDetailBlendFactor "0.800"
 	g_flDetailBlendToFull "0.000"
 	g_flDetailTexCoordRotation "0.000"
 	g_vDetailTexCoordOffset "[0.000 0.000]"
-	g_vDetailTexCoordScale "[5.000 5.000]"
-	TextureDetail "textures/detail/noise_detail_01_detail.tga"
+	g_vDetailTexCoordScale "[7.740 7.740]"
+	TextureDetail "textures/detail/noise_detail.tga"
 	TextureDetailMask "materials/default/default_detailmask.tga"
 
 	//---- Fade ----
@@ -46,7 +46,7 @@ Layer0
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "[0.950000 0.950000 0.950000 0.000000]"
+	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
