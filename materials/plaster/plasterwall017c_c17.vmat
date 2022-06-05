@@ -2,23 +2,21 @@
 
 Layer0
 {
-	shader "complex.vfx"
-
-	//---- Overlay ----
-	F_OVERLAY 1
-
-	//---- Translucent ----
-	F_TRANSLUCENT 1
-
-	//---- Ambient Occlusion ----
-	g_flAmbientOcclusionDirectDiffuse "0.000"
-	g_flAmbientOcclusionDirectSpecular "0.000"
-	TextureAmbientOcclusion "materials/default/default_ao.tga"
+	shader "simple.vfx"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "textures/decals/decalgraffiti001c_color.tga"
+	TextureColor "textures/plaster/plasterwall017c_color.jpg"
+
+	//---- Detail Texture ----
+	g_flDetailBlendFactor "0.800"
+	g_flDetailBlendToFull "0.000"
+	g_flDetailTexCoordRotation "0.000"
+	g_vDetailTexCoordOffset "[0.000 0.000]"
+	g_vDetailTexCoordScale "[6.783 6.783]"
+	TextureDetail "textures/detail/plaster_detail.tga"
+	TextureDetailMask "materials/default/default_detailmask.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -34,7 +32,7 @@ Layer0
 	g_flMetalness "0.000"
 
 	//---- Normal ----
-	TextureNormal "materials/default/default_normal.tga"
+	TextureNormal "textures/plaster/plasterwall017c_normal.jpg"
 
 	//---- Roughness ----
 	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
@@ -46,7 +44,8 @@ Layer0
 	g_vTexCoordScale "[1.000 1.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
 
-	//---- Translucent ----
-	g_flOpacityScale "1.000"
-	TextureTranslucency "textures/decals/decalgraffiti001c_trans.tga"
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "concrete"
+	}
 }

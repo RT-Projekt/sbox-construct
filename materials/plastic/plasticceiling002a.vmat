@@ -2,12 +2,30 @@
 
 Layer0
 {
-	shader "simple.vfx"
+	shader "complex.vfx"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 	TextureColor "textures/plastic/plasticceiling002a_color.jpg"
+
+	//---- Detail Texture ----
+	g_flDetailBlendFactor "0.800"
+	g_flDetailBlendToFull "0.000"
+	g_flDetailTexCoordRotation "0.000"
+	g_vDetailTexCoordOffset "[0.000 0.000]"
+	g_vDetailTexCoordScale "[6.783 6.783]"
+	TextureDetail "textures/detail/plaster_detail.tga"
+	TextureDetailMask "materials/default/default_detailmask.tga"
+
+	//---- Detail Texture ----
+	g_flDetailBlendFactor "0.800"
+	g_flDetailBlendToFull "0.000"
+	g_flDetailTexCoordRotation "0.000"
+	g_vDetailTexCoordOffset "[0.000 0.000]"
+	g_vDetailTexCoordScale "[7.740 7.740]"
+	TextureDetail "textures/detail/noise_detail.tga"
+	TextureDetailMask "materials/default/default_detailmask.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -26,7 +44,7 @@ Layer0
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "materials/default/default_rough.tga"
+	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"

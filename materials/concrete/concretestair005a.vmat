@@ -7,13 +7,19 @@ Layer0
 	//---- PBR ----
 	F_AMBIENT_OCCLUSION_TEXTURE 1
 
-	//---- Ambient Occlusion ----
-	TextureAmbientOcclusion "textures/concrete/concretestair005a_ao.jpg"
-
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 	TextureColor "textures/concrete/concretestair005a_color.jpg"
+
+	//---- Detail Texture ----
+	g_flDetailBlendFactor "0.600"
+	g_flDetailBlendToFull "0.000"
+	g_flDetailTexCoordRotation "0.000"
+	g_vDetailTexCoordOffset "[0.000 0.000]"
+	g_vDetailTexCoordScale "[7.345 7.345]"
+	TextureDetail "textures/detail/noise_detail.tga"
+	TextureDetailMask "materials/default/default_detailmask.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -32,7 +38,7 @@ Layer0
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "textures/concrete/concretestair005a_rough.jpg"
+	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
