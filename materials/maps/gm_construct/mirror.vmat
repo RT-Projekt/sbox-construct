@@ -2,7 +2,10 @@
 
 Layer0
 {
-	shader "water.vfx"
+	shader "blendable.vfx"
+
+	//---- Rendering ----
+	F_HIGH_QUALITY_REFLECTIONS 1
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
@@ -12,12 +15,21 @@ Layer0
 	g_flFadeExponent "1.000"
 
 	//---- Fog ----
-	g_vWaterFogColor "[0.000000 0.000000 0.000000 0.000000]"
-	g_vWaterFogDistanceFalloff "[250.000 0.100]"
+	g_bFogEnabled "1"
 
-	//---- Material ----
-	TextureColor "materials/default/default_color.tga"
-	TextureTintMask "materials/default/default.tga"
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+
+	//---- Material A ----
+	g_flTintColorA "[1.000000 1.000000 1.000000 0.000000]"
+	TextureAmbientOcclusionA "materials/default/default_ao.tga"
+	TextureBlendMaskA "materials/default/default_blend.tga"
+	TextureColorA "[1.000000 1.000000 1.000000 0.000000]"
+	TextureMetalnessA "[1.000000 1.000000 1.000000 0.000000]"
+	TextureNormalA "materials/default/default_normal.tga"
+	TextureRoughnessA "[0.000000 0.000000 0.000000 0.000000]"
+	TextureTintMaskA "materials/default/default.tga"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
@@ -25,11 +37,4 @@ Layer0
 	g_vTexCoordOffset "[0.000 0.000]"
 	g_vTexCoordScale "[1.000 1.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
-
-	//---- Water ----
-	g_fPhase "0.000"
-	g_fScale "1.000"
-	g_fSpeed "0.000"
-	g_fSurfaceRoughness "0.040"
-	g_fWeight "0.010"
 }
