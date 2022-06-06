@@ -6,6 +6,7 @@ Layer0
 
 	//---- PBR ----
 	F_SPECULAR 1
+	F_TRANSMISSIVE_BACKFACE_NDOTL 1
 
 	//---- Rendering ----
 	F_RENDER_BACKFACES 1
@@ -52,6 +53,9 @@ Layer0
 
 	//---- Translucent ----
 	g_flAlphaTestReference "0.500"
-	g_flAntiAliasedEdgeStrength "1.000"
+	g_flAntiAliasedEdgeStrength "0.500"
 	TextureTranslucency "textures/models/props_foliage/tree_deciduous_cards_02_trans.tga"
+
+	//---- Transmission ----
+	TextureTransmissiveColor "textures/models/props_foliage/tree_deciduous_cards_02_color.tga"
 }

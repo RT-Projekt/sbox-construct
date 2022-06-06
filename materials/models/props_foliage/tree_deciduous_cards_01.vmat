@@ -6,13 +6,13 @@ Layer0
 
 	//---- PBR ----
 	F_SPECULAR 1
+	F_TRANSMISSIVE_BACKFACE_NDOTL 1
 
 	//---- Rendering ----
 	F_RENDER_BACKFACES 1
 
 	//---- Translucent ----
 	F_ALPHA_TEST 1
-	F_PREPASS_ALPHA_TEST 1
 
 	//---- Ambient Occlusion ----
 	g_flAmbientOcclusionDirectDiffuse "0.000"
@@ -41,7 +41,7 @@ Layer0
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "textures/models/props_foliage/tree_deciduous_cards_01_rough.tga"
+	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
@@ -52,6 +52,9 @@ Layer0
 
 	//---- Translucent ----
 	g_flAlphaTestReference "0.500"
-	g_flAntiAliasedEdgeStrength "1.000"
+	g_flAntiAliasedEdgeStrength "0.500"
 	TextureTranslucency "textures/models/props_foliage/tree_deciduous_cards_01_trans.tga"
+
+	//---- Transmission ----
+	TextureTransmissiveColor "textures/models/props_foliage/tree_deciduous_cards_01_color.tga"
 }

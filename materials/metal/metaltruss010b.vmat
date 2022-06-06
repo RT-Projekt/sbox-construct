@@ -4,6 +4,9 @@ Layer0
 {
 	shader "complex.vfx"
 
+	//---- Detail Texture ----
+	F_DETAIL_TEXTURE 2 // Overlay
+
 	//---- PBR ----
 	F_SPECULAR 1
 
@@ -21,7 +24,16 @@ Layer0
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "textures/metal/metaltruss_010b_color.tga"
+	TextureColor "textures/metal/metaltruss010b_color.jpg"
+
+	//---- Detail Texture ----
+	g_flDetailBlendFactor "1.000"
+	g_flDetailBlendToFull "0.000"
+	g_flDetailTexCoordRotation "0.000"
+	g_vDetailTexCoordOffset "[0.000 0.000]"
+	g_vDetailTexCoordScale "[1.000 1.000]"
+	TextureDetail "materials/default/default_detail.tga"
+	TextureDetailMask "materials/default/default_detailmask.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -52,7 +64,7 @@ Layer0
 	//---- Translucent ----
 	g_flAlphaTestReference "0.500"
 	g_flAntiAliasedEdgeStrength "1.000"
-	TextureTranslucency "textures/metal/metaltruss_010b_trans.tga"
+	TextureTranslucency "textures/metal/metaltruss010b_trans.jpg"
 
 	SystemAttributes
 	{

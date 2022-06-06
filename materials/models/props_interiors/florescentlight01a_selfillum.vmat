@@ -17,7 +17,7 @@ Layer0
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "textures/models/props_interiors/florescentlight01a_color.tga"
+	TextureColor "textures/models/props_interiors/florescentlight01a_color.jpg"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -30,13 +30,13 @@ Layer0
 	g_flDirectionalLightmapStrength "1.000"
 
 	//---- Metalness ----
-	TextureMetalness "textures/models/props_interiors/florescentlight01a_metal.tga"
+	TextureMetalness "textures/models/props_interiors/florescentlight01a_metal.jpg"
 
 	//---- Normal ----
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "textures/models/props_interiors/florescentlight01a_rough.tga"
+	TextureRoughness "textures/models/props_interiors/florescentlight01a_rough.jpg"
 
 	//---- Self Illum ----
 	g_flSelfIllumAlbedoFactor "1.000"
@@ -44,7 +44,7 @@ Layer0
 	g_flSelfIllumScale "1.000"
 	g_vSelfIllumScrollSpeed "[0.000 0.000]"
 	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureSelfIllumMask "textures/models/props_interiors/florescentlight01a_selfillum.tga"
+	TextureSelfIllumMask "textures/models/props_interiors/florescentlight01a_selfillum.jpg"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"

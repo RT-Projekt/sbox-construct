@@ -11,7 +11,6 @@
 				[
 					{
 						_class = "DefaultMaterialGroup"
-						name = "Default"
 						remaps = 
 						[
 							{
@@ -34,8 +33,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "MeshLod0"
-						filename = "models/.src/gmod_smd/props_building/row_res_2.smd"
+						filename = "meshes/props_building/row_res_2_lod0.smd"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0
@@ -55,5 +53,6 @@
 		model_archetype = "static_prop_model"
 		primary_associated_entity = "prop_static"
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }

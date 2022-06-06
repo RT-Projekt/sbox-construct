@@ -14,7 +14,7 @@
 						switch_threshold = 0.0
 						meshes = 
 						[
-							"RenderMeshLod0",
+							"LOD0",
 						]
 					},
 					{
@@ -22,7 +22,7 @@
 						switch_threshold = 32.0
 						meshes = 
 						[
-							"RenderMeshLod1",
+							"LOD1",
 						]
 					},
 					{
@@ -30,7 +30,7 @@
 						switch_threshold = 64.0
 						meshes = 
 						[
-							"RenderMeshLod2",
+							"LOD2",
 						]
 					},
 				]
@@ -59,14 +59,19 @@
 				[
 					{
 						_class = "PhysicsMeshFile"
-						name = "PhysicsMeshFile0"
 						parent_bone = ""
-						surface_prop = "default"
-						collision_prop = "default"
+						surface_prop = "metal"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 0.0, 0.0 ]
-						filename = "models/.src/gmod_smd/props_rooftop/antenna02a_phy.smd"
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						filename = "meshes/props_rooftop/antenna02a_phy.smd"
 						import_scale = 1.0
 						maxMeshVertices = 0
 						qemError = 0.0
@@ -84,8 +89,8 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "RenderMeshLod0"
-						filename = "models/.src/gmod_smd/props_rooftop/antenna02a_ref.smd"
+						name = "LOD0"
+						filename = "meshes/props_rooftop/antenna02a_lod0.smd"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0
@@ -101,8 +106,8 @@
 					},
 					{
 						_class = "RenderMeshFile"
-						name = "RenderMeshLod1"
-						filename = "models/.src/gmod_smd/props_rooftop/antenna02a_ref_lod1.smd"
+						name = "LOD1"
+						filename = "meshes/props_rooftop/antenna02a_lod1.smd"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0
@@ -118,8 +123,8 @@
 					},
 					{
 						_class = "RenderMeshFile"
-						name = "RenderMeshLod2"
-						filename = "models/.src/gmod_smd/props_rooftop/antenna02a_ref_lod2.smd"
+						name = "LOD2"
+						filename = "meshes/props_rooftop/antenna02a_lod2.smd"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0
@@ -139,5 +144,6 @@
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = ""
+		base_model_name = ""
 	}
 }

@@ -4,6 +4,17 @@ Layer0
 {
 	shader "complex.vfx"
 
+	//---- Detail Texture ----
+	F_DETAIL_TEXTURE 2 // Overlay
+
+	//---- PBR ----
+	F_SPECULAR 1
+
+	//---- Ambient Occlusion ----
+	g_flAmbientOcclusionDirectDiffuse "0.000"
+	g_flAmbientOcclusionDirectSpecular "0.000"
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
+
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
@@ -16,15 +27,6 @@ Layer0
 	g_vDetailTexCoordOffset "[0.000 0.000]"
 	g_vDetailTexCoordScale "[6.783 6.783]"
 	TextureDetail "textures/detail/plaster_detail.tga"
-	TextureDetailMask "materials/default/default_detailmask.tga"
-
-	//---- Detail Texture ----
-	g_flDetailBlendFactor "0.800"
-	g_flDetailBlendToFull "0.000"
-	g_flDetailTexCoordRotation "0.000"
-	g_vDetailTexCoordOffset "[0.000 0.000]"
-	g_vDetailTexCoordScale "[7.740 7.740]"
-	TextureDetail "textures/detail/noise_detail.tga"
 	TextureDetailMask "materials/default/default_detailmask.tga"
 
 	//---- Fade ----

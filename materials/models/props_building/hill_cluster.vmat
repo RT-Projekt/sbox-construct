@@ -23,7 +23,7 @@ Layer0
 	g_flMetalness "0.000"
 
 	//---- Normal ----
-	TextureNormal "textures/models/props_building/hill_cluster_rough.tga"
+	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
 	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
