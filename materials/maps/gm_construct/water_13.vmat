@@ -15,10 +15,10 @@ Layer0
 	g_flFadeExponent "1.000"
 
 	//---- Fog ----
-	g_fFogToneDistance "1024.000"
+	g_fFogToneDistance "250.000"
 	g_vWaterFogColor "[0.023529 0.223529 0.254902 0.000000]"
 	g_vWaterFogColor2 "[0.023529 0.223529 0.254902 0.000000]"
-	g_vWaterFogDistanceFalloff "[250.000 0.100]"
+	g_vWaterFogDistanceFalloff "[1024.000 0.100]"
 
 	//---- Material ----
 	TextureColor "materials/default/default_color.tga"
@@ -32,9 +32,9 @@ Layer0
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
 
 	//---- Water ----
-	g_fPhase "6.000"
+	g_fPhase "1.500"
 	g_fScale "1.000"
-	g_fSpeed "0.946"
-	g_fSurfaceRoughness "0.010"
+	g_fSpeed "1.000"
+	g_fSurfaceRoughness "0.040"
 	g_fWeight "1.000"
 }
