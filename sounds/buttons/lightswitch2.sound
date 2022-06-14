@@ -7,11 +7,13 @@
 		VolumeRandom = 0
 		Pitch = 1
 		PitchRandom = 0
-		DistanceMax = 250
+		Decibels = 30
 		Sounds = 
 		[
 			resource:"sounds/buttons/lightswitch2.vsnd",
 		]
 		SelectionMode = 3
+		MaximumDistance = 236.23267
+		MinimumDistance = 11.811633
 	}
 }
