@@ -1,0 +1,167 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Half-Life 2
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+"e3_Techdemo_06"
+{
+	"dsp"	"20"	
+
+	// lake
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"attenuation"	"0"
+		"wave"		"ambient/water/lake_water.wav"
+	}
+}
+
+
+
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Half-Life 2 Episode 2
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+"ep2_forest.util_birds"
+{
+	"playrandom"
+	{
+		"time"		"7,25"
+		"volume"	"0.25,0.45"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/levels/forest/dist_birds1.wav"
+			"wave"	"ambient/levels/forest/dist_birds2.wav"
+			"wave"	"ambient/levels/forest/dist_birds3.wav"
+			"wave"	"ambient/levels/forest/dist_birds4.wav"
+			"wave"	"ambient/levels/forest/dist_birds5.wav"
+			"wave"	"ambient/levels/forest/dist_birds6.wav"
+		}
+	}
+}
+
+
+
+"ep2_forest.util_windgusts"
+{
+	"playrandom"
+	{
+		"volume"	"0.2,0.6"
+		"time"		"10.0, 30.0"
+		"pitch"		"90,130"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave" "ambient/levels/forest/treewind1.wav"
+			"wave" "ambient/levels/forest/treewind2.wav"
+			"wave" "ambient/levels/forest/treewind3.wav"
+			"wave" "ambient/levels/forest/treewind4.wav"
+		}
+	}
+}
+
+
+
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Garry's Mod
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+"construct.outside"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"ep2_forest.util_birds"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"ep2_forest.util_windgusts"
+		"volume"	"0.4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"110"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"@ambient/construct_tone.wav"
+	}
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"ambient/forest_day.wav"
+	}
+}
+
+"construct.inside"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"70"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"ambient/construct_tone.wav"
+	}
+}
+
+"construct.lake"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"e3_Techdemo_06"
+		"volume"	"0.6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"95"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"ambient/construct_tone.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"ambient/forest_day.wav"
+	}
+}
+
+"construct.garage"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"90"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"ambient/construct_tone.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"ambient/forest_day.wav"
+	}
+}
