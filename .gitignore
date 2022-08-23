@@ -1,2 +1,25 @@
+# Sandbox
+code/accesslist.txt
+Properties
+.intermediate
+*.csproj
+*.bat
+
+# VRAD artifacts
+_bakeresourcecache/
+*_bakeresourcecache.vpk
+
+# Compiled files
+*.*_c
+*.los
+
+# Build results
+[Oo]bj/
+.vs/
+
 # Windows Explorer
-*.ini
+.external/*.ini
+materials_src/*.ini
+meshes_src/*.ini
+models_src/*.ini
+textures_src/*.ini
