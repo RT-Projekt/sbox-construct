@@ -3,6 +3,7 @@
   "Type": "map",
   "Org": "rtp",
   "Ident": "gm_construct",
+  "Tags": null,
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
