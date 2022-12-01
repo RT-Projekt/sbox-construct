@@ -2,11 +2,12 @@
 
 Layer0
 {
-	shader "blend.vfx"
+	shader "simple.vfx"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "materials/default/default_color.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -18,21 +19,14 @@ Layer0
 	g_flDirectionalLightmapMinZ "0.050"
 	g_flDirectionalLightmapStrength "1.000"
 
-	//---- Mask ----
-	TextureMask "textures/maps/gm_construct/grass_blendmask.jpg"
+	//---- Metalness ----
+	g_flMetalness "0.000"
 
-	//---- Material A ----
-	g_flMetalnessA "0.000"
-	TextureColorA "textures/maps/gm_construct/grass1_color.jpg"
-	TextureNormalA "materials/default/default_normal.tga"
-	TextureRoughnessA "[1.000000 1.000000 1.000000 0.000000]"
+	//---- Normal ----
+	TextureNormal "materials/default/default_normal.tga"
 
-	//---- Material B ----
-	g_flMetalnessB "0.000"
-	g_vTexCoordScale2 "[1.000 1.000]"
-	TextureColorB "textures/maps/gm_construct/grass2_color.jpg"
-	TextureNormalB "materials/default/default_normal.tga"
-	TextureRoughnessB "[1.000000 1.000000 1.000000 0.000000]"
+	//---- Roughness ----
+	TextureRoughness "materials/default/default_rough.tga"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
@@ -40,9 +34,4 @@ Layer0
 	g_vTexCoordOffset "[0.000 0.000]"
 	g_vTexCoordScale "[1.000 1.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
-
-	SystemAttributes
-	{
-		PhysicsSurfaceProperties "grass"
-	}
 }
